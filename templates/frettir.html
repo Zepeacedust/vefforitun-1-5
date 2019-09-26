@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<body>
+    <h1>beep beep</h1>
+
+    {% for frett in frettir %}
+        <a href="/{{ frett }}">
+            {{ frett }}
+        </a>
+    {% endfor %}
+</body>
+{% endblock %}
