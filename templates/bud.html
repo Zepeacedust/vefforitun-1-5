@@ -2,9 +2,9 @@
 {% block content %}
 <body>
     <h1>beep beep</h1>
-
-    {% for frett in frettir %}
-        <a href="/{{ frett }}">
+    <a href="/karfa">Karfa</a>
+    {% for frett in hlutir %}
+        <a href="/add/{{ frett }}">
             {{ frett }}
         </a>
     {% endfor %}

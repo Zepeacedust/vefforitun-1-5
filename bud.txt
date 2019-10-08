@@ -1,0 +1,5 @@
+{
+1:["felli!", "500Kr"],
+2:["felli, maður á þakinu", "999999999Kr"],
+3:["felli?", "?Kr"]
+}
