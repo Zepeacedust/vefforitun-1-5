@@ -4,10 +4,26 @@
 {{ content }}
 {% for item in karfa %}
 
-    <p>{{ item[0] }}: {{ item[1] }}</p>
+    <p>{{ item[0] }}: {{ item[1] }}Kr <a href = "/del/{{ item[2] }}">eiða</a></p> 
 
 {% endfor %}
-
+<p>samtals: {{ verd }}</p>
 <br><a href="/">Back</a>
+
+<form method="post" action="kaupa" accept-charset="UTF-8">>
+    <h3>Viðskiptavinur</h3>
+    <label>Nafn:
+        <input type="text" name="nafn" required="" placeholder="Name">
+    </label>
+    <label>Tölvupóstfang:
+        <input type="email" name="email" required="" placeholder="e-mail">
+    </label>
+    <label>Símanúmer:
+        <input type="text" name="simi" required="" pattern="^(\354 )?\d{3}[ -]?\d{4}$" placeholder="1234567" title="Aðeins 7 tölustafir">
+    </label>
+    <input type="hidden" name="samtals" value="{{ verd }}">
+    <input type="submit" value="Kaupa vörur">
+
+</form>
 
 {% endblock %}
