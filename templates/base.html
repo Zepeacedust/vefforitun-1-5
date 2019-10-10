@@ -9,14 +9,12 @@
 <body>
     <div class="container">
         <div class="left">
-            <h1> left </h1>
+            {% block left %}
+            {% endblock %}
         </div>
         <div class="centre">
             {% block content %}
             {% endblock %}
-        </div>
-        <div class="right">
-            <h1> right </h1>
         </div>
     </div>
 </body>

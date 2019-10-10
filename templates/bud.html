@@ -1,12 +1,18 @@
 {% extends "base.html" %}
+
+{% block left %}
+<a href="/karfa"><img src="/static/images/karfa.svg">Karfa({{ karfa }})</a>
+{% endblock %}
+
 {% block content %}
 <body>
-    <h1>beep beep</h1>
-    <a href="/karfa">Karfa</a>
-    {% for frett in hlutir %}
-        <a href="/add/{{ frett }}">
-            {{ frett }}
+    <h1>Búð</h1>
+    {% for hlutur in hlutir %}
+        <a href="/add/{{ hlutur[0] }}">
+            {{ hlutur[1][0] }}  {{ hlutur[1][1] }}Kr
         </a>
+        <br>
+        
     {% endfor %}
 </body>
 {% endblock %}

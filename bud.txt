@@ -1,5 +1,8 @@
 {
-1:["felli!", "500Kr"],
-2:["felli, maður á þakinu", "999999999Kr"],
-3:["felli?", "?Kr"]
+1:["The silmarillion", 1799 ,1],
+2:["Discworld: The light fantastic", 2500,2],
+3:["The Lord Of the Rings Þríleikurinn", 5000,3],
+4:["Sjálfstætt fólk", 3000, 4],
+5:["Hobbitinn", 3500, 5],
+6:["17mertrar, 12 sentimetrar, 5 millimetrar af Cat5 capal", 1000, 6]
 }
